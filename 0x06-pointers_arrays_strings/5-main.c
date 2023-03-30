@@ -4,7 +4,6 @@
  * main - entry
  * Return: 0
  */
-
 int main(void)
 {
 	char str[] = "Look up!\n";
