@@ -7,11 +7,11 @@
  */
 int _sq_recursion(int n, int a)
 {
-        if (a * a > n)
-                return (-1);
-        if (a * a == n)
-                return (a);
-        return (_sq_recursion(n, a + 1));
+	if (a * a > n)
+		return (-1);
+	if (a * a == n)
+		return (a);
+	return (_sq_recursion(n, a + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
