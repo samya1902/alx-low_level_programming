@@ -16,7 +16,7 @@ int _sq_recursion(int n, int a)
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: integer input
- * Return; square root
+ * Return: square root
  */
 int _sqrt_recursion(int n)
 {
