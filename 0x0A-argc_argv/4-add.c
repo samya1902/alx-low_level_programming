@@ -1,6 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
+/**
+ * check_nb - check if is digit
+ * @str: array string
+ * Return: 0
+ */
+int check_nb(char *str)
+{
+	unsigned int c;
+
+	while (c < strlen(str))
+	{
+		if (!isdigit(str[c]))
+			return (0);
+		c++;
+	}
+	return (1);
+}
 /**
  * main - Entry
  * @argc: args number
@@ -11,7 +29,6 @@ int main(int argc, char **argv)
 {
 	int sum = 0;
 	int i = 1;
-	int isnumber;
 	int n;
 
 	if (argc < 2)
@@ -20,16 +37,15 @@ int main(int argc, char **argv)
 	{
 		for (; i < argc; i++)
 		{
-			isnumber = isdigit(argv[i]);
-			if (isnumber == 1)
+			if (check_nb(argv[i]))
 			{
-				n = atoi(argv[i]);/* atoi convert to string*/
+				n = atoi(argv[i]);
 				sum = sum + n;
 			}
 			else
 			{
 				printf("Error\n");
-				break;
+				return (1);
 			}
 		}
 		printf("%d\n", sum);
