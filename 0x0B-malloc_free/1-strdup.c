@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - function that  returns a pointer to a new string which 
+ * _strdup - function that  returns a pointer to a new string which
  * is a duplicate of the string str.
  * @str: string to duplicate
- * Return: point to string
+ * Return: pointer to string
  */
 char *_strdup(char *str)
 {
