@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stddef.h>
 /*
  * read_textfile - reads a text file and prints it to output
  * @filename: text file being read
@@ -21,5 +22,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	w = write(STDOUT_FILENO, buf, t);
 	free(buf);
 	close(fd);
-	return (w);
+	return (w)i;
 }
