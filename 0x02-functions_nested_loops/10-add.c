@@ -4,7 +4,7 @@
  * add - adds two integers and returns the result
  * @a: first integer to be added to b
  * @b: second integer to be added to a
- * Retrun: integer sum of int a and int b
+ * Return: integer sum of int a and int b
  */
 int add(int a, int b)
 {
